@@ -69,7 +69,16 @@
                 </li>
                 <li>
                     <h3>¿Cuales son los pasos para conectar git con github?</h3>
-                    [Pon tu respuesta]
+                    ssh-keygen -t ed25519 -C "tuemail@ejemplo.com"
+                    ssh-add ~/.ssh/id_ed25519
+                    ssh -T git@github.com
+
+                    git init
+                        git add .
+                                git commit -m "init"
+                        git branch -M main
+                    git remote add origin git@github.com:TU_USUARIO/NOMBRE_REPO.git
+                    git push -u origin main
                 </li>
                 <li>
                     <h3>¿Cómo puedo crear un alias en git?</h3>
